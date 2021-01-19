@@ -20,19 +20,20 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/discover" exact component={Discover} />
-          <Route path="/following" exact component={Following} />
-          <Route path="/profile" exact component={Profile} />
-          <Route path="/new" exact component={New} />
-          <Route path="/dailly" exact component={Dailly} />
-          <Route path="/all" exact component={All} />
-          <Route path="/my" exact component={My} />
-          <Route path="/donations" exact component={Donations} />
-          <Route path="/discover" exact component={Discover} />
-          <Route path="/following" exact component={Following} />
-          <Route path="/profile" exact component={Profile} />
-          <Route path="/new" exact component={New} />
+          <Route path="/LapStore" component={Home}></Route>
+          <Route path="/" component={Home} />
+          <Route path="/discover" component={Discover} />
+          <Route path="/following" component={Following} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/new" component={New} />
+          <Route path="/dailly" component={Dailly} />
+          <Route path="/all" component={All} />
+          <Route path="/my" component={My} />
+          <Route path="/donations" component={Donations} />
+          <Route path="/discover" component={Discover} />
+          <Route path="/following" component={Following} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/new" component={New} />
         </Switch>
         <Nav className="bar Bottom" />
       </div>
