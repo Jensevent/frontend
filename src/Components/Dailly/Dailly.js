@@ -69,7 +69,7 @@ class Dailly extends Component {
             </div>
           </div>
         </div>
-        <Link to='/'>
+        <Link to='/frontend/'>
           <div className="lowBar">
             <h3 className="textBottom">Daily Challenges</h3>
             <i className="fas fa-chevron-up"></i>

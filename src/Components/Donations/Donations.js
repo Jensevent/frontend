@@ -167,7 +167,7 @@ class Donations extends Component {
             </ul>
           </div>
         </div>
-        <Link to='/'>
+        <Link to='/frontend/'>
           <div className="lowBar">
             <h3 className="textBottom">Donations</h3>
             <i className="fas fa-chevron-up"></i>

@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav>
       <ul className="nav-links">
-        <Link to='/'>
+        <Link to='/frontend/'>
           <span className="fas fa-home"></span>
           <li className="spacing">Thuis</li>
         </Link>

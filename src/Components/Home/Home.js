@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="banner">
-          <Link to='/dailly'>
+          <Link to='/frontend/dailly'>
             <img src="Images/DaillyBanner.jpeg" alt="DaillyBanner" className="imageHome"></img>
             <div className="lowerBar">
               <h3 className="tempOne">Daily Challenges</h3>
@@ -18,7 +18,7 @@ class Home extends Component {
         </div>
 
         <div className="banner">
-          <Link to='/my'>
+          <Link to='/frontend/my'>
             <img src="Images/MyBanner.jpeg" alt="myBanner" className="imageHome"></img>
             <div className="lowerBar">
               <h3 className="tempOne">My Challenges</h3>
@@ -28,7 +28,7 @@ class Home extends Component {
         </div>
 
         <div className="banner">
-          <Link to='/all'>
+          <Link to='/frontend/all'>
             <img src="Images/AllBanner.png" alt="AllBanner" className="imageHome"></img>
             <div className="lowerBar">
               <h3 className="tempOne">All Challenges</h3>
@@ -39,7 +39,7 @@ class Home extends Component {
         </div>
 
         <div className="banner Donations">
-          <Link to='/donations'>
+          <Link to='/frontend/donations'>
             <img src="Images/DonationBanner.jpeg" alt="DonationBanner" className="imageHome"></img>
             <div className="lowerBar">
               <h3 className="tempOne">Donations</h3>

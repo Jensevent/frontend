@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, BrowserRouter } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Nav from './Components/Nav/Nav';
 import Dailly from './Components/Dailly/Dailly';
@@ -16,27 +16,27 @@ import New from './Components/New/New';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/discover" component={Discover} />
-          <Route path="/following" component={Following} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/new" component={New} />
-          <Route path="/dailly" component={Dailly} />
-          <Route path="/all" component={All} />
-          <Route path="/my" component={My} />
-          <Route path="/donations" component={Donations} />
-          <Route path="/discover" component={Discover} />
-          <Route path="/following" component={Following} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/new" component={New} />
+          <Route path="/frontend" exact component={Home} />
+          <Route path="/discover" exact component={Discover} /> {/* Works */}
+          <Route path="/following" exact component={Following} /> {/* Works */}
+          <Route path="/profile" exact component={Following} /> {/* Works */}
+          <Route path="/new" exact component={Following} />
+          <Route path="/frontend/dailly" exact component={Dailly} /> {/* Works */}
+          <Route path="/frontend/all" exact component={All} />
+          <Route path="/frontend/my" exact component={My} />
+          <Route path="/frontend/donations" exact component={Donations} />
+          {/* <Route path="/frontend/discover" exact component={Discover} />
+          <Route path="/frontend/following" exact component={Following} />
+          <Route path="/frontend/profile" exact component={Profile} />
+          <Route path="/frontend/new" exact component={New} /> */}
         </Switch>
         <Nav className="bar Bottom" />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
