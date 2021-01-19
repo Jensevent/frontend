@@ -20,7 +20,6 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/LapStore" component={Home}></Route>
           <Route path="/" component={Home} />
           <Route path="/discover" component={Discover} />
           <Route path="/following" component={Following} />
